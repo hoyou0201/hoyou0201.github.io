@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Chirpy 테마로 나만의 GitHub 블로그 만들기
+date: 2025-06-03 17:27 +0900
 ---
-
 공부하면서 배운 내용을 정리하고, 개발한 프로젝트를 소개할 수 있는 **개인 기술 블로그**를 만들고 싶다면  
 **GitHub Pages + Jekyll + Chirpy 테마** 조합은 강력한 선택입니다.
 
@@ -85,7 +85,8 @@ Chirpy는 GitHub에서 호스팅되고 자동으로 배포되기 때문에 **초
 - 지금까지 한 작업들을 깃허브에 커밋하고 푸시하면 깃허브가 자동으로 블로그를 빌드해줍니다.
 - `Action`탭에 들어가면 빌드 중인것을 확인 할 수 있고 빌드가 끝난다면 `https://아이디.github.io`링크에서 자신의 페이지를 확인 할 수 있습니다
 > ⚠️ 커밋을 할때 오류가 생긴다면 형식을 지키지 않아서 그렇습니다. chirpy는 기본적으로 Conventional Commits 규칙을 따르도록 설정되어 있습니다.
->  이 설정이 싫으시다면 터미널에 `npm uninstall @commitlint/cli @commitlint/config-conventional`을 입력하고 `.husky/commit-msg`파일을 지우시고 다시 커밋을 하면 제대로 될 것입니다.
+>  이 설정이 싫으시다면 터미널에 `npm uninstall @commitlint/cli @commitlint/config-conventional`을 입력하고 `.husky/commit-msg`과 `.github/workflows/commitlint.yml`파일을 지우시고 다시 커밋을 하면 제대로 될 것입니다.
+> 만약 충돌이 나서 푸시가 안된다면 강제로 init한 내용을 푸시하시면 됩니다.
 {: .prompt-warning }
 
 
