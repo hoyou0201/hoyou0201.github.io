@@ -224,3 +224,18 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+jekyll_compose:
+  auto_open: true
+  default_front_matter:
+    drafts:
+      description:
+      category:
+      tags:
+      author: 최호성
+    posts:
+      description:
+      category:
+      tags:
+      published: false
+      sitemap: false
