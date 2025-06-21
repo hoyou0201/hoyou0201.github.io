@@ -59,6 +59,47 @@
         "kind": "build"
       },
       "detail": "Runs both the Jekyll server with live reload and build JS files in watch mode."
+    },
+    {
+      "label": "New BOJ Post",
+      "type": "shell",
+      "command": "${workspaceFolder}/tools/boj.sh",
+      "args": ["${input:bojNumber}", "${input:bojTitle}"],
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Publish by Keyword",
+      "type": "shell",
+      "command": "${workspaceFolder}/tools/publish_fuzzy.sh",
+      "args": ["${input:titleFragment}"],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "bojNumber",
+      "type": "promptString",
+      "description": "문제 번호 입력 (예: 10942)"
+    },
+    {
+      "id": "bojTitle",
+      "type": "promptString",
+      "description": "문제 제목 입력 (예: 팰린드롬)"
+    },
+    {
+      "id": "titleFragment",
+      "type": "promptString",
+      "description": "게시할 글 제목 일부를 입력하세요 (예: 팰린)"
     }
   ]
 }
